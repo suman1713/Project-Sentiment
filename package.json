@@ -1,0 +1,27 @@
+{
+  "name": "project-sentiment",
+  "version": "0.0.1",
+  "description": "Twitter feed filtered by sentiment.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suman1713/Project-Sentiment.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/suman1713/Project-Sentiment/issues"
+  },
+  "homepage": "https://github.com/suman1713/Project-Sentiment#readme",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "express": "^4.16.1",
+    "express-handlebars": "^3.0.0",
+    "sequelize": "^4.13.5",
+    "vue": "^2.4.4",
+    "xhr": "^2.4.0"
+  }
+}
