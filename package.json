@@ -21,6 +21,8 @@
     "express": "^4.16.1",
     "express-handlebars": "^3.0.0",
     "oauth": "^0.9.15",
+    "querystring": "^0.2.0",
+    "request": "^2.83.0",
     "sequelize": "^4.13.5",
     "vue": "^2.4.4",
     "xhr": "^2.4.0"
