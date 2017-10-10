@@ -1,0 +1,17 @@
+<section class="section">
+  <div id="timeline">
+    <a href="/api/signout">Signout</a>
+    <ul>
+      <li v-for="tweet in feed">
+        <h5>from: \{{ tweet.user.name }}</h5>
+        <h2>\{{ tweet.text }}</h2>
+        <div v-for="tone_category in tweet.tone.document_tone.tone_categories" v-if="tone_category.category_id === 'emotion_tone'">
+          <h2 style="display: inline;" v-for="tone in tone_category.tones" {{!-- v-if="tone.score > 0.1" --}}>
+            <span :style="'opacity: ' + tone.score">\{{ toneEmojis[tone.tone_id] }}</span>
+          </h2>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<script src="/assets/js/timeline.js"></script>

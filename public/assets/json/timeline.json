@@ -1,0 +1,242 @@
+[
+  {
+    "created_at": "Sat Oct 07 19:33:46 +0000 2017",
+    "id_str": "916748402032918528",
+    "text": "mood for fall:\nthe sounds of Doug Middlebrook making his way through a @horrornights maze https://t.co/Ib2qVgd4tF",
+    "user": {
+      "id_str": "34507480",
+      "name": "Ariana Grande",
+      "screen_name": "ArianaGrande",
+      "profile_image_url": "http://pbs.twimg.com/profile_images/910720968305152001/DUogJANZ_normal.jpg"
+    },
+    "tone": {
+      "document_tone": {
+        "tone_categories": [
+          {
+            "tones": [
+              {
+                "score": 0.16416,
+                "tone_id": "anger",
+                "tone_name": "Anger"
+              },
+              {
+                "score": 0.026428,
+                "tone_id": "disgust",
+                "tone_name": "Disgust"
+              },
+              {
+                "score": 0.082028,
+                "tone_id": "fear",
+                "tone_name": "Fear"
+              },
+              {
+                "score": 0.504265,
+                "tone_id": "joy",
+                "tone_name": "Joy"
+              },
+              {
+                "score": 0.206552,
+                "tone_id": "sadness",
+                "tone_name": "Sadness"
+              }
+            ],
+            "category_id": "emotion_tone",
+            "category_name": "Emotion Tone"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "created_at": "Sat Oct 07 19:19:10 +0000 2017",
+    "id_str": "916744731677167616",
+    "text": "btw i \n(it's grey) https://t.co/fVcqR7jDqF",
+    "user": {
+      "id_str": "34507480",
+      "name": "Ariana Grande",
+      "screen_name": "ArianaGrande",
+      "profile_image_url": "http://pbs.twimg.com/profile_images/910720968305152001/DUogJANZ_normal.jpg"
+    },
+    "tone": {
+      "document_tone": {
+        "tone_categories": [
+          {
+            "tones": [
+              {
+                "score": 0.017669,
+                "tone_id": "anger",
+                "tone_name": "Anger"
+              },
+              {
+                "score": 0.075693,
+                "tone_id": "disgust",
+                "tone_name": "Disgust"
+              },
+              {
+                "score": 0.046361,
+                "tone_id": "fear",
+                "tone_name": "Fear"
+              },
+              {
+                "score": 0.15339,
+                "tone_id": "joy",
+                "tone_name": "Joy"
+              },
+              {
+                "score": 0.747945,
+                "tone_id": "sadness",
+                "tone_name": "Sadness"
+              }
+            ],
+            "category_id": "emotion_tone",
+            "category_name": "Emotion Tone"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "created_at": "Sat Oct 07 17:59:49 +0000 2017",
+    "id_str": "916724758779015168",
+    "text": "doug thinks he's judy garland https://t.co/nhVEoKwcPB",
+    "user": {
+      "id_str": "34507480",
+      "name": "Ariana Grande",
+      "screen_name": "ArianaGrande",
+      "profile_image_url": "http://pbs.twimg.com/profile_images/910720968305152001/DUogJANZ_normal.jpg"
+    },
+    "tone": {
+      "document_tone": {
+        "tone_categories": [
+          {
+            "tones": [
+              {
+                "score": 0.107984,
+                "tone_id": "anger",
+                "tone_name": "Anger"
+              },
+              {
+                "score": 0.095019,
+                "tone_id": "disgust",
+                "tone_name": "Disgust"
+              },
+              {
+                "score": 0.131769,
+                "tone_id": "fear",
+                "tone_name": "Fear"
+              },
+              {
+                "score": 0.165917,
+                "tone_id": "joy",
+                "tone_name": "Joy"
+              },
+              {
+                "score": 0.175161,
+                "tone_id": "sadness",
+                "tone_name": "Sadness"
+              }
+            ],
+            "category_id": "emotion_tone",
+            "category_name": "Emotion Tone"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "created_at": "Tue Oct 03 01:52:55 +0000 2017",
+    "id_str": "915031879727816704",
+    "text": "sending as much love and healing energy as humanly possible out into the world tonight ✨ ♡ 🌛💡",
+    "user": {
+      "id_str": "34507480",
+      "name": "Ariana Grande",
+      "screen_name": "ArianaGrande",
+      "profile_image_url": "http://pbs.twimg.com/profile_images/910720968305152001/DUogJANZ_normal.jpg"
+    },
+    "tone": {
+      "document_tone": {
+        "tone_categories": [
+          {
+            "tones": [
+              {
+                "score": 0.006262,
+                "tone_id": "anger",
+                "tone_name": "Anger"
+              },
+              {
+                "score": 0.016377,
+                "tone_id": "disgust",
+                "tone_name": "Disgust"
+              },
+              {
+                "score": 0.034292,
+                "tone_id": "fear",
+                "tone_name": "Fear"
+              },
+              {
+                "score": 0.852109,
+                "tone_id": "joy",
+                "tone_name": "Joy"
+              },
+              {
+                "score": 0.079523,
+                "tone_id": "sadness",
+                "tone_name": "Sadness"
+              }
+            ],
+            "category_id": "emotion_tone",
+            "category_name": "Emotion Tone"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "created_at": "Mon Oct 02 17:00:17 +0000 2017",
+    "id_str": "914897837728473089",
+    "text": "Praying for all those in pain",
+    "user": {
+      "id_str": "27260086",
+      "name": "Justin Bieber",
+      "screen_name": "justinbieber",
+      "profile_image_url": "http://pbs.twimg.com/profile_images/898295311893880832/bCps4HFV_normal.jpg"
+    },
+    "tone": {
+      "document_tone": {
+        "tone_categories": [
+          {
+            "tones": [
+              {
+                "score": 0.030601,
+                "tone_id": "anger",
+                "tone_name": "Anger"
+              },
+              {
+                "score": 0.052503,
+                "tone_id": "disgust",
+                "tone_name": "Disgust"
+              },
+              {
+                "score": 0.429571,
+                "tone_id": "fear",
+                "tone_name": "Fear"
+              },
+              {
+                "score": 0.013307,
+                "tone_id": "joy",
+                "tone_name": "Joy"
+              },
+              {
+                "score": 0.728643,
+                "tone_id": "sadness",
+                "tone_name": "Sadness"
+              }
+            ],
+            "category_id": "emotion_tone",
+            "category_name": "Emotion Tone"
+          }
+        ]
+      }
+    }
+  }
+]
