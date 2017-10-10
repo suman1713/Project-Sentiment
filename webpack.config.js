@@ -2,8 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    timeline: './src/assets/js/timeline.js',
-    login: './src/assets/js/login.js'
+    timeline: './src/assets/js/timeline.js'
   },
   output: {
     path: path.resolve(__dirname, 'public/assets/js'),

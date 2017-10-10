@@ -14,8 +14,7 @@ module.exports = function(express) {
 
   router.get('/oauth/authurl', (req, res) => {
     twitter.getAuthUrl((url, reqData) => {
-      res.json({ auth_url: url });
-      console.log(reqData);
+      res.redirect(url);
     });
   });
 
@@ -25,7 +24,7 @@ module.exports = function(express) {
       if (userData.screen_name && userData.user_id) {
         User.upsert({ screenName: userData.screen_name, userId: userData.user_id, oauthToken: userData.oauth_token, oauthTokenSecret: userData.oauth_token_secret }).then((inserted) => {
           req.session.user_id = userData.user_id;
-          setTimeout(function() {res.redirect('/')}, 300);
+          res.redirect('/');
         });
       }
     });
