@@ -3,7 +3,7 @@ var qs = require('querystring');
 require('dotenv').config();
 
 var oauth = {
-  callback: 'oob',
+  callback: 'http://127.0.0.1.xip.io:3000/api/oauth/confirm',
   consumer_key: process.env.TWITTER_KEY,
   consumer_secret: process.env.TWITTER_SECRET
 };

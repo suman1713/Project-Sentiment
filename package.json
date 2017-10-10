@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/suman1713/Project-Sentiment#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "dotenv": "^4.0.0",
     "express": "^4.16.1",
     "express-handlebars": "^3.0.0",
