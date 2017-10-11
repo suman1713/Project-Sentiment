@@ -2,6 +2,7 @@ var twitter = require('../oauth/twitter-request');
 var { User } = require('../models');
 require('dotenv').config();
 var ToneAnalyzerV3 = require('watson-developer-cloud/tone-analyzer/v3');
+var fs = require('fs');
 
 var toneAnalyzer = new ToneAnalyzerV3({
   username: process.env.WATSON_USERNAME,
@@ -38,32 +39,34 @@ module.exports = function(express) {
 
   router.get('/timeline', (req, res) => {
     if (req.session.user_id) {
-      User.findOne({ where: { userId: req.session.user_id } }).then((user) => {
-        twitter.sendRequest('get', 'statuses/home_timeline.json', { count: 5 }, { token: user.oauthToken, token_secret: user.oauthTokenSecret }, (timeline) => {
-          let analyzedTimeline = [];
-          for (let t in timeline) {
-            toneAnalyzer.tone({ text: timeline[t].text, tones: 'emotion', sentences: false }, (err, response) => {
-              analyzedTimeline[t] = {
-                created_at: timeline[t].created_at,
-                id_str: timeline[t].id_str,
-                text: timeline[t].text,
-                user: {
-                  id_str: timeline[t].user.id_str,
-                  name: timeline[t].user.name,
-                  screen_name: timeline[t].user.screen_name,
-                  profile_image_url: timeline[t].user.profile_image_url
-                },
-                tone: response
-              };
-              // timeline[t].tone = response;
-              if (Object.values(analyzedTimeline).length === timeline.length) {
-                res.json(analyzedTimeline);
-              }
-            })
-          }
-          // res.json(timeline);
+      if (process.env.DUMMY_DATA) {
+        res.json(JSON.parse(fs.readFileSync('./public/assets/json/timeline.json', 'utf-8')));
+      } else {
+        User.findOne({ where: { userId: req.session.user_id } }).then((user) => {
+          twitter.sendRequest('get', 'statuses/home_timeline.json', { count: 5 }, { token: user.oauthToken, token_secret: user.oauthTokenSecret }, (timeline) => {
+            let analyzedTimeline = [];
+            for (let t in timeline) {
+              toneAnalyzer.tone({ text: timeline[t].text, tones: 'emotion', sentences: false }, (err, response) => {
+                analyzedTimeline[t] = {
+                  created_at: timeline[t].created_at,
+                  id_str: timeline[t].id_str,
+                  text: timeline[t].text,
+                  user: {
+                    id_str: timeline[t].user.id_str,
+                    name: timeline[t].user.name,
+                    screen_name: timeline[t].user.screen_name,
+                    profile_image_url: timeline[t].user.profile_image_url
+                  },
+                  tone: response
+                };
+                if (Object.values(analyzedTimeline).length === timeline.length) {
+                  res.json(analyzedTimeline);
+                }
+              })
+            }
+          });
         });
-      });
+      }
     } else {
       res.json({ error: 'Not authenticated' });
     }

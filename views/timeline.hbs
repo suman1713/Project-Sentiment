@@ -1,8 +1,22 @@
 <section class="section">
   <div id="timeline">
     <a href="/api/signout">Signout</a>
+    <div>😡
+    <input type="range" min="0.09" max="1" step="any" v-model="sliders.anger"></div>
+    <br>
+    <div>🤢
+    <input type="range" min="0.09" max="1" step="any" v-model="sliders.disgust"></div>
+    <br>
+    <div>😱
+    <input type="range" min="0.09" max="1" step="any" v-model="sliders.fear"></div>
+    <br>
+    <div>😊
+    <input type="range" min="0.09" max="1" step="any" v-model="sliders.joy"></div>
+    <br>
+    <div>😢
+    <input type="range" min="0.09" max="1" step="any" v-model="sliders.sadness"></div>
     <ul>
-      <li v-for="tweet in feed">
+      <li v-for="tweet in feed" v-if="matchesSelection(tweet)">
         <h5>from: \{{ tweet.user.name }}</h5>
         <h2>\{{ tweet.text }}</h2>
         <div v-for="tone_category in tweet.tone.document_tone.tone_categories" v-if="tone_category.category_id === 'emotion_tone'">

@@ -1,5 +1,245 @@
 [
   {
+    "created_at": "Wed Oct 11 02:16:05 +0000 2017",
+    "id_str": "917936813234409472",
+    "text": "More Hollywood artists are speaking out against Harvey Weinstein https://t.co/8DPphVZnUG",
+    "user": {
+      "id_str": "759251",
+      "name": "CNN",
+      "screen_name": "CNN",
+      "profile_image_url": "http://pbs.twimg.com/profile_images/508960761826131968/LnvhR8ED_normal.png"
+    },
+    "tone": {
+      "document_tone": {
+        "tone_categories": [
+          {
+            "tones": [
+              {
+                "score": 0.139779,
+                "tone_id": "anger",
+                "tone_name": "Anger"
+              },
+              {
+                "score": 0.123425,
+                "tone_id": "disgust",
+                "tone_name": "Disgust"
+              },
+              {
+                "score": 0.021911,
+                "tone_id": "fear",
+                "tone_name": "Fear"
+              },
+              {
+                "score": 0.422251,
+                "tone_id": "joy",
+                "tone_name": "Joy"
+              },
+              {
+                "score": 0.037223,
+                "tone_id": "sadness",
+                "tone_name": "Sadness"
+              }
+            ],
+            "category_id": "emotion_tone",
+            "category_name": "Emotion Tone"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "created_at": "Wed Oct 11 02:11:02 +0000 2017",
+    "id_str": "917935541705957376",
+    "text": "The U.S. men will miss the World Cup after a loss in Trinidad and Tobago https://t.co/JRQTU9yv2N",
+    "user": {
+      "id_str": "807095",
+      "name": "The New York Times",
+      "screen_name": "nytimes",
+      "profile_image_url": "http://pbs.twimg.com/profile_images/905479981459013637/a6BbKh4k_normal.jpg"
+    },
+    "tone": {
+      "document_tone": {
+        "tone_categories": [
+          {
+            "tones": [
+              {
+                "score": 0.057476,
+                "tone_id": "anger",
+                "tone_name": "Anger"
+              },
+              {
+                "score": 0.064549,
+                "tone_id": "disgust",
+                "tone_name": "Disgust"
+              },
+              {
+                "score": 0.159924,
+                "tone_id": "fear",
+                "tone_name": "Fear"
+              },
+              {
+                "score": 0.023164,
+                "tone_id": "joy",
+                "tone_name": "Joy"
+              },
+              {
+                "score": 0.877882,
+                "tone_id": "sadness",
+                "tone_name": "Sadness"
+              }
+            ],
+            "category_id": "emotion_tone",
+            "category_name": "Emotion Tone"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "created_at": "Wed Oct 11 02:08:05 +0000 2017",
+    "id_str": "917934800400519169",
+    "text": "Hogan Gidley, a former press secretary for Mike Huckabee's campaign, will become deputy White House press secretary https://t.co/BZqGHhvGcF",
+    "user": {
+      "id_str": "759251",
+      "name": "CNN",
+      "screen_name": "CNN",
+      "profile_image_url": "http://pbs.twimg.com/profile_images/508960761826131968/LnvhR8ED_normal.png"
+    },
+    "tone": {
+      "document_tone": {
+        "tone_categories": [
+          {
+            "tones": [
+              {
+                "score": 0.105935,
+                "tone_id": "anger",
+                "tone_name": "Anger"
+              },
+              {
+                "score": 0.221078,
+                "tone_id": "disgust",
+                "tone_name": "Disgust"
+              },
+              {
+                "score": 0.186878,
+                "tone_id": "fear",
+                "tone_name": "Fear"
+              },
+              {
+                "score": 0.240452,
+                "tone_id": "joy",
+                "tone_name": "Joy"
+              },
+              {
+                "score": 0.282083,
+                "tone_id": "sadness",
+                "tone_name": "Sadness"
+              }
+            ],
+            "category_id": "emotion_tone",
+            "category_name": "Emotion Tone"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "created_at": "Wed Oct 11 02:06:49 +0000 2017",
+    "id_str": "917934480459030528",
+    "text": "TUNE IN: @POTUS joins @SeanHannity in an exclusive interview TOMORROW at 9p ET on Fox News Channel! https://t.co/bOFzVLz0jx",
+    "user": {
+      "id_str": "1367531",
+      "name": "Fox News",
+      "screen_name": "FoxNews",
+      "profile_image_url": "http://pbs.twimg.com/profile_images/794654746342662144/hHnFe4Sx_normal.jpg"
+    },
+    "tone": {
+      "document_tone": {
+        "tone_categories": [
+          {
+            "tones": [
+              {
+                "score": 0.047366,
+                "tone_id": "anger",
+                "tone_name": "Anger"
+              },
+              {
+                "score": 0.027109,
+                "tone_id": "disgust",
+                "tone_name": "Disgust"
+              },
+              {
+                "score": 0.192772,
+                "tone_id": "fear",
+                "tone_name": "Fear"
+              },
+              {
+                "score": 0.576944,
+                "tone_id": "joy",
+                "tone_name": "Joy"
+              },
+              {
+                "score": 0.093121,
+                "tone_id": "sadness",
+                "tone_name": "Sadness"
+              }
+            ],
+            "category_id": "emotion_tone",
+            "category_name": "Emotion Tone"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "created_at": "Wed Oct 11 02:04:38 +0000 2017",
+    "id_str": "917933932406099970",
+    "text": "JUST IN: US men's soccer team fails to qualify for #WorldCup for first time in 3 decades https://t.co/XTEV5cybco",
+    "user": {
+      "id_str": "1367531",
+      "name": "Fox News",
+      "screen_name": "FoxNews",
+      "profile_image_url": "http://pbs.twimg.com/profile_images/794654746342662144/hHnFe4Sx_normal.jpg"
+    },
+    "tone": {
+      "document_tone": {
+        "tone_categories": [
+          {
+            "tones": [
+              {
+                "score": 0.047854,
+                "tone_id": "anger",
+                "tone_name": "Anger"
+              },
+              {
+                "score": 0.100132,
+                "tone_id": "disgust",
+                "tone_name": "Disgust"
+              },
+              {
+                "score": 0.042242,
+                "tone_id": "fear",
+                "tone_name": "Fear"
+              },
+              {
+                "score": 0.090554,
+                "tone_id": "joy",
+                "tone_name": "Joy"
+              },
+              {
+                "score": 0.817644,
+                "tone_id": "sadness",
+                "tone_name": "Sadness"
+              }
+            ],
+            "category_id": "emotion_tone",
+            "category_name": "Emotion Tone"
+          }
+        ]
+      }
+    }
+  },
+  {
     "created_at": "Sat Oct 07 19:33:46 +0000 2017",
     "id_str": "916748402032918528",
     "text": "mood for fall:\nthe sounds of Doug Middlebrook making his way through a @horrornights maze https://t.co/Ib2qVgd4tF",

@@ -11,13 +11,29 @@ var timeline = new Vue({
       fear: '😱',
       joy: '😊',
       sadness: '😢'
+    },
+    sliders: {
+      anger: 1,
+      disgust: 1,
+      fear: 1,
+      joy: 1,
+      sadness: 1
     }
   },
   methods: {
     retrieve: function() {
-      xhr({ uri: '/assets/json/timeline.json' }, function(err, resp, body) {
+      xhr({ uri: '/api/timeline' }, function(err, resp, body) {
         timeline.feed = JSON.parse(body);
       });
+    },
+    matchesSelection: function(tweet) {
+      let tones = tweet.tone.document_tone.tone_categories[0].tones;
+      for (let t in tones) {
+        if (this.sliders[tones[t].tone_id] < tones[t].score) {
+          return false;
+        }
+      }
+      return true;
     }
   }
 });
