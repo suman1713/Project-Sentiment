@@ -23,6 +23,11 @@ var timeline = new Vue({
     },
     options: [NONE, SOME, MORE]
   },
+  filters: {
+      truncate: function(text) {
+          return text.slice(0, 20);
+      }
+  },
   methods: {
     retrieve: function() {
       xhr({ uri: '/api/timeline' }, function(err, resp, body) {

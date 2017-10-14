@@ -22,19 +22,56 @@
           <input type="radio" :value="value" v-model="sliders[tone]">
         </label>
       </div>
-    </div>
-    <ul> --}}
+    </div> --}}
+    <ul>
       <li v-for="tweet in feed" v-if="matchesSelection(tweet)">
-        <h5>from: \{{ tweet.user.name }}</h5>
-        <h2>\{{ tweet.text }}</h2>
+          <article class="media">
+              <figure class="media-left">
+                  <p class="image is-64x64">
+                      <img :src="tweet.user.profile_image_url">
+                      
+
+                  </p>
+                  
+              </figure>
+              <div class="media-content">
+                  <div class="content">
+                      <p>
+                          <strong>\{{ tweet.user.name }}</strong> <small>@ \{{tweet.user.screen_name}}</small> 
+                          <br><small>\{{tweet.created_at | truncate}}</small>
+                          <br />
+                          \{{ tweet.text }}
+
+                      </p>
+                  </div>
+                  <nav class="level is-mobile">
+                      <div class="level-left">
+                          <a class="level-item">
+                              <span class="icon is-small"><i class="fa fa-reply"></i></span>
+                          </a>
+                          <a class="level-item">
+                              <span class="icon is-small"><i class="fa fa-retweet"></i></span>
+                          </a>
+                          <a class="level-item">
+                              <span class="icon is-small"><i class="fa fa-heart"></i></span>
+                          </a>
+                      </div>
+                  </nav>
+              </div>
+              
+          </article>
         <div v-for="tone_category in tweet.tone.document_tone.tone_categories" v-if="tone_category.category_id === 'emotion_tone'">
           <h2 class="is-inline" v-for="tone in tone_category.tones" {{!-- v-if="tone.score > 0.1" --}}>
             <span :style="'opacity: ' + tone.score">\{{ toneEmojis[tone.tone_id] }}</span>
+              
           </h2>
         </div>
+          </br>
       </li>
     </ul>
     <a href="#" v-on:click.prevent="nextPage">Next Page</a>
   </div>
 </section>
+
+
 <script src="/assets/js/timeline.js"></script>
