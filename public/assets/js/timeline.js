@@ -118,6 +118,8 @@ function isFunction (fn) {
 var Vue = __webpack_require__(3);
 var xhr = __webpack_require__(4);
 
+const NONE = 0, SOME = 1, MORE = 2;
+
 var timeline = new Vue({
   el: '#timeline',
   data: {
@@ -129,13 +131,14 @@ var timeline = new Vue({
       joy: '😊',
       sadness: '😢'
     },
-    sliders: {
+    controls: {
       anger: 1,
       disgust: 1,
       fear: 1,
       joy: 1,
       sadness: 1
-    }
+    },
+    options: [NONE, SOME, MORE]
   },
   methods: {
     retrieve: function() {
@@ -143,10 +146,25 @@ var timeline = new Vue({
         timeline.feed = JSON.parse(body);
       });
     },
+    nextPage: function() {
+      let maxId = this.feed[this.feed.length - 1].id_str.replace(/(\d{2})$/, s => parseInt(s) - 1);
+      xhr({ uri: '/api/timeline?max_id=' + maxId }, function(err, resp, body) {
+        timeline.feed = timeline.feed.concat(JSON.parse(body));
+      });
+    },
     matchesSelection: function(tweet) {
       let tones = tweet.tone.document_tone.tone_categories[0].tones;
+      let greatest = 0;
+      let prominent = [];
       for (let t in tones) {
-        if (this.sliders[tones[t].tone_id] < tones[t].score) {
+        if (tones[t].score > tones[greatest].score) greatest = t;
+        if (tones[t].score > 0.3) {
+          prominent.push(tones[t]);
+        }
+      }
+      if (this.controls[tones[greatest].tone_id] == MORE) return true;
+      for (let t in prominent) {
+        if (this.controls[prominent[t].tone_id] == NONE) {
           return false;
         }
       }

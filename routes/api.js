@@ -42,8 +42,11 @@ module.exports = function(express) {
       if (process.env.DUMMY_DATA) {
         res.json(JSON.parse(fs.readFileSync('./public/assets/json/timeline.json', 'utf-8')));
       } else {
+        let options = { count: 5 };
+        if (req.query.count) options.count = req.query.count;
+        if (req.query.max_id) options.max_id = req.query.max_id;
         User.findOne({ where: { userId: req.session.user_id } }).then((user) => {
-          twitter.sendRequest('get', 'statuses/home_timeline.json', { count: 5 }, { token: user.oauthToken, token_secret: user.oauthTokenSecret }, (timeline) => {
+          twitter.sendRequest('get', 'statuses/home_timeline.json', options, { token: user.oauthToken, token_secret: user.oauthTokenSecret }, (timeline) => {
             let analyzedTimeline = [];
             for (let t in timeline) {
               toneAnalyzer.tone({ text: timeline[t].text, tones: 'emotion', sentences: false }, (err, response) => {
@@ -51,6 +54,8 @@ module.exports = function(express) {
                   created_at: timeline[t].created_at,
                   id_str: timeline[t].id_str,
                   text: timeline[t].text,
+                  retweet_count: timeline[t].retweet_count,
+                  favourites_count: timeline[t].favourites_count,
                   user: {
                     id_str: timeline[t].user.id_str,
                     name: timeline[t].user.name,
