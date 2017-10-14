@@ -49,7 +49,7 @@
             </article>
             <div v-for="tone_category in tweet.tone.document_tone.tone_categories" v-if="tone_category.category_id === 'emotion_tone'">
               <h2 class="is-inline" v-for="tone in tone_category.tones" {{!-- v-if="tone.score > 0.1" --}}>
-                <span :style="'opacity: ' + tone.score">\{{ toneEmojis[tone.tone_id] }}</span>
+                <span :style="'opacity: ' + tone.score">\{{ toneEmojis[tone.tone_id] }}&nbsp;</span>
 
               </h2>
             </div>
