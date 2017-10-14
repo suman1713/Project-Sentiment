@@ -20,6 +20,11 @@ var timeline = new Vue({
       sadness: 1
     }
   },
+  filters: {
+      truncate: function(text, stop, clamp) {
+          return text.slice(0, stop) + (stop < text.length ? clamp || '...' : '')
+      }
+  },
   methods: {
     retrieve: function() {
       xhr({ uri: '/api/timeline' }, function(err, resp, body) {
