@@ -1,13 +1,107 @@
 ﻿<!DOCTYPE html>
 <html>
   <head>
-  	<style type="text/css">
-        
-  	</style>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+        html, body {
+            height: 100%;
+            font-weight: 800;
+        }
+
+        body {
+            background: #030321;
+            font-family: Ariel;
+        }
+
+        svg {
+            display: block;
+            font: 9.5em 'Montserrat';
+            width: 960px;
+            height: 500px;
+            margin: 0 auto;
+        }
+
+        .text-copy {
+            fill: none;
+            stroke: white;
+            stroke-dasharray: 6% 29%;
+            stroke-width: 5px;
+            stroke-dashoffset: 0%;
+            animation: stroke-offset 5.5s infinite linear;
+        }
+
+            .text-copy:nth-child(1) {
+                stroke: #008000;
+                animation-delay: -1;
+            }
+
+            .text-copy:nth-child(2) {
+                stroke: #FFFF00;
+                animation-delay: -2s;
+            }
+
+            .text-copy:nth-child(3) {
+                stroke: #DC143C;
+                animation-delay: -3s;
+            }
+
+            .text-copy:nth-child(4) {
+                stroke: #0000FF;
+                animation-delay: -4s;
+            }
+
+            .text-copy:nth-child(5) {
+                stroke: #000000;
+                animation-delay: -5s;
+            }
+
+        @keyframes stroke-offset {
+            100% {
+                stroke-dashoffset: -35%;
+            }
+        }
+
+        @import url(https://www.greatschools.org/gk/wp-content/uploads/2015/05/The-Mood-Meter-750x325.jpg);
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: arial, times new roman'open sans', helvetica, sans;
+            
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            
+            background: url(https://images.pexels.com/photos/6347/coffee-cup-working-happy.jpg?w=1260&h=750&auto=compress&cs=tinysrgb) repeat;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+           
+           
+        }
+
+
+        .log-form {
+            width: 60px;
+            min-width: 320px;
+            max-width: 475px;
+            
+            position: absolute;
+            bottom: 10%;
+            left: 80%;
+            box-shadow: 0px 2px 5px rgba(0,0,0,.25);
+
+            @media:(max-width: 40em) {
+                width: 95%; position: relative; margin: 2.5% auto 0 auto; left: 0%; -webkit-transform: translate(0%,0%); -moz-transform: translate(0%,0%); -o-transform: translate(0%,0%); -ms-transform: translate(0%,0%); transform: translate(0%,0%);
+            }
+    </style>
     <meta charset="utf-8">
     <title>Feed My Mood</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
-
+     
   </head>
   <body>
     {{{body}}}
