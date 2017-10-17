@@ -5,7 +5,7 @@ module.exports = function(express) {
     if (req.session.user_id) {
       res.render('timeline');
     } else {
-      res.render('welcome');
+      res.render('welcome', {helpers: { height: 'height: 100%;'}});
     }
   });
 

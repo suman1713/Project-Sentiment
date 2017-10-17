@@ -5,12 +5,15 @@
         @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
         html, body {
-            height: 100%;
             font-weight: 800;
+        }
+        
+        html {
+            height: 100%;
+            width: 100%;
         }
 
         body {
-            background: #030321;
             font-family: Ariel;
         }
 
@@ -75,10 +78,9 @@
             -moz-background-size: cover;
             -o-background-size: cover;
             
-            background: url(https://images.pexels.com/photos/6347/coffee-cup-working-happy.jpg?w=1260&h=750&auto=compress&cs=tinysrgb) repeat;
-            background-size: cover;
-            height: 100%;
-            width: 100%;
+            background-image: url(https://images.pexels.com/photos/6347/coffee-cup-working-happy.jpg?w=1260&h=750&auto=compress&cs=tinysrgb);
+            background-attachment: fixed;
+            {{ height }}
            
            
         }
