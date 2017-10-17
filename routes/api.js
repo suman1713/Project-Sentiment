@@ -25,7 +25,7 @@ module.exports = function(express) {
       if (userData.screen_name && userData.user_id) {
         User.upsert({ screenName: userData.screen_name, userId: userData.user_id, oauthToken: userData.oauth_token, oauthTokenSecret: userData.oauth_token_secret }).then((inserted) => {
           req.session.user_id = userData.user_id;
-          res.redirect('/');
+          req.session.save(() => res.redirect('/'));
         });
       }
     });
