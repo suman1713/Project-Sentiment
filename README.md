@@ -1,5 +1,5 @@
 # Feed my Mood
-![alt text](https://github.com/suman1713/Project-Sentiment/blob/master/public/assets/img/feedmymood_demo.gif")
+![alt text](https://github.com/suman1713/Project-Sentiment/blob/master/public/assets/img/feedmymood_demo.gif)
 
 Our web app uses **Oauth authentication** to utilize existing Twitter credentials for logging into the app. After being verified, the app pulls tweets from User's Twitter feed through **Twitter API**.
 
